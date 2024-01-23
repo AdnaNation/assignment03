@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <header class="lg:mx-40 lg:my-10 px-3">
+    <header class="lg: container mx-auto">
         <!-- nav section -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -85,64 +85,131 @@
             </div>
         </div>
         <!-- banner section -->
-        <div class="carousel w-full lg:h-[700px] mt-12 mb-14">
-            <div id="slide1" class="carousel-item relative w-full">
+        <div class="container mx-auto lg:24 px8">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-[url(Images/1.png)] h-[50vh]">
+                    <div>
+                        <h1 class="text-black">Meet all the heroes from the field</h1>
+                    </div>
 
-                <img src="Images/1.png" class="w-full lg:h-[600px]" />
+                    <!-- <img src="Images/1.png" class="w-full lg:h-[600px]" /> -->
 
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="lg:container mx-auto">
+        <!-- professional hockeys club -->
+        <div>
+            <hr class="bg-color5 w-full my-6 lg:my-20">
+            <div class="text-center space-y-4">
+                <h3 class="text-2xl lg:text-4xl font-extrabold manrope">Professional Hockeys Club</h3>
+                <p class="text-color4">
+                    We provide all the facilities that a player needs. The below are the main interesting thing to see
+                    first.
+                </p>
+            </div>
+            <hr class="bg-color5 w-full my-6 lg:my-20">
+            <div class="flex flex-col lg:flex-row gap-8 m-10">
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-color2" style="--value:87;" role="progressbar"><span
+                            class="text-xl font-semibold text-black">87%</span></div>
+                    <h3 class="text-xl font-semibold manrope">Prayer Facility</h3>
+                    <p class="text-color4">
+                        Prayer is a essential part for human being. We keep that in our playing part.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span
+                            class="text-xl font-semibold text-black">95%</span></div>
+                    <h3 class="text-xl font-semibold manrope">Experienced Coach</h3>
+                    <p class="text-color4">
+                        Experienced coach makes player Experienced. We keep that in our playing part.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-or" style="--value:90;" role="progressbar"><span
+                            class="text-xl font-semibold text-black">90%</span></div>
+                    <h3 class="text-xl font-semibold manrope">Senior Player</h3>
+                    <p class="text-color4">
+                        We have so many senior player in our club. That makes junior player so ease to follow
+                        practically.
+                    </p>
+                </div>
+                <div class="text-center space-y-5">
+                    <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar"><span
+                            class="text-xl font-semibold text-black">80%</span></div>
+                    <h3 class="text-xl font-semibold manrope">Training Ground</h3>
+                    <p class="text-color4">
+                        Ground facility is the number one priority for make out good players.
+                    </p>
                 </div>
             </div>
         </div>
 
-    </header>
-    <main class="lg:mx-40 lg:my-10 px-3">
-        <!-- professional hockeys club -->
-        <hr class="bg-color5 w-full my-6 lg:my-20">
-        <div class="text-center">
-            <h3 class="text-2xl lg:text-4xl font-extrabold manrope">Professional Hockeys Club</h3>
-            <p class="text-color4">
-                We provide all the facilities that a player needs. The below are the main interesting thing to see
-                first.
-            </p>
+        <!-- program section -->
+        <div class="">
+            <hr class="bg-color5 w-full my-6 lg:my-20">
+            <div class="text-center space-y-4">
+                <h3 class="text-2xl lg:text-4xl font-extrabold manrope">Program Sections</h3>
+                <p class="text-color4">
+                    we have so many programs coming up devided by Junior, Teenager and Professional Program. For
+                    registration all you have to do is register by click on Register Now button.
+                </p>
+            </div>
+            <hr class="bg-color5 w-full my-6 lg:my-20">
+
+
+            <div class="flex flex-col lg:flex-row gap-6">
+                <div class="hero  h-80 rounded-2xl" style="background-image: url('Images/2.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="  text-neutral-content  ml-10 mt-20 w-[90%] space-y-5">
+                        <h1 class="text-3xl font-extrabold text-white manrope">Junior Program</h1>
+                        <p class="text-white manrope">This section is only for junior player. Click to register.</p>
+                        <a class=" btn bg-color2 text-white font-bold manrope text-sm lg:text-xl border border-none">Register
+                            Now!
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="hero  h-80 rounded-2xl" style="background-image: url('Images/3.png');">
+                    <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                    <div class="  text-neutral-content  ml-10 mt-20 w-[90%] space-y-5">
+                        <h1 class="text-3xl font-extrabold text-white manrope">Teenager Program</h1>
+                        <p class="text-white manrope">This section is only for teenager player. Click to register.
+                        </p>
+                        <a class=" btn bg-color2 text-white font-bold manrope text-sm lg:text-xl border border-none">Register
+                            Now!
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="hero lg:w-full h-80 rounded-2xl mt-6 " style="background-image: url('Images/4.png');">
+                <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                <div class="  text-neutral-content  ml-10 mt-20 w-[90%] lg:w-[45.6%] lg:-ml-[44.5rem] lg:mt-48">
+                    <h1 class="text-3xl font-extrabold text-white manrope">Professional Program</h1>
+                    <p class="text-white manrope mt-5 mb-5 ">This section is only for professional player. Click to
+                        register.
+                    </p>
+                    <a class=" btn bg-color2 text-white font-bold manrope text-sm lg:text-xl border border-none">Register
+                        Now!
+                    </a>
+
+                </div>
+            </div>
         </div>
-        <hr class="bg-color5 w-full my-6 lg:my-20">
-        <div class="flex flex-col lg:flex-row gap-8 m-10">
-            <div class="text-center space-y-5">
-                <div class="radial-progress text-color2" style="--value:87;" role="progressbar"><span
-                        class="text-xl font-semibold text-black">87%</span></div>
-                <h3 class="text-xl font-semibold manrope">Prayer Facility</h3>
-                <p class="text-color4">
-                    Prayer is a essential part for human being. We keep that in our playing part.
-                </p>
-            </div>
-            <div class="text-center space-y-5">
-                <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span
-                        class="text-xl font-semibold text-black">95%</span></div>
-                <h3 class="text-xl font-semibold manrope">Experienced Coach</h3>
-                <p class="text-color4">
-                    Experienced coach makes player Experienced. We keep that in our playing part.
-                </p>
-            </div>
-            <div class="text-center space-y-5">
-                <div class="radial-progress text-or" style="--value:90;" role="progressbar"><span
-                        class="text-xl font-semibold text-black">90%</span></div>
-                <h3 class="text-xl font-semibold manrope">Senior Player</h3>
-                <p class="text-color4">
-                    We have so many senior player in our club. That makes junior player so ease to follow practically.
-                </p>
-            </div>
-            <div class="text-center space-y-5">
-                <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar"><span
-                        class="text-xl font-semibold text-black">80%</span></div>
-                <h3 class="text-xl font-semibold manrope">Training Ground</h3>
-                <p class="text-color4">
-                    Ground facility is the number one priority for make out good players.
-                </p>
-            </div>
         </div>
+
 
     </main>
     <footer>
