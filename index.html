@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5e144cf484.js" crossorigin="anonymous"></script>
+
     <!-- google sans  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +23,11 @@
             theme: {
                 extend: {
                     colors: {
+                        color1: '#131318',
+                        color2: '#FF4240',
+                        color3: '#424247',
+                        color4: '#13181f80',
+                        color5: '#13131833',
                         clifford: '#da373d',
                     }
                 }
@@ -34,7 +45,109 @@
 </head>
 
 <body>
+    <header class="lg:mx-40 lg:my-10 px-3">
+        <!-- nav section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a class="text-[#89898B] mr-5"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </div>
+                <a class="text-2xl lg:text-4xl font-extrabold manrope">Hockey<span class="text-color2">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-color3 manrope">
+                    <li><a class="text-color2 font-extrabold">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
 
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="text-[#89898B] mr-5 hidden lg:block"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="btn bg-color2 text-white font-bold manrope text-sm lg:text-xl">Get Ticket</a>
+            </div>
+        </div>
+        <!-- banner section -->
+        <div class="carousel w-full lg:h-[700px] mt-12 mb-14">
+            <div id="slide1" class="carousel-item relative w-full">
+
+                <img src="Images/1.png" class="w-full lg:h-[600px]" />
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="lg:mx-40 lg:my-10 px-3">
+        <!-- professional hockeys club -->
+        <hr class="bg-color5 w-full my-6 lg:my-20">
+        <div class="text-center">
+            <h3 class="text-2xl lg:text-4xl font-extrabold manrope">Professional Hockeys Club</h3>
+            <p class="text-color4">
+                We provide all the facilities that a player needs. The below are the main interesting thing to see
+                first.
+            </p>
+        </div>
+        <hr class="bg-color5 w-full my-6 lg:my-20">
+        <div class="flex flex-col lg:flex-row gap-8 m-10">
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-color2" style="--value:87;" role="progressbar"><span
+                        class="text-xl font-semibold text-black">87%</span></div>
+                <h3 class="text-xl font-semibold manrope">Prayer Facility</h3>
+                <p class="text-color4">
+                    Prayer is a essential part for human being. We keep that in our playing part.
+                </p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-green-600" style="--value:95;" role="progressbar"><span
+                        class="text-xl font-semibold text-black">95%</span></div>
+                <h3 class="text-xl font-semibold manrope">Experienced Coach</h3>
+                <p class="text-color4">
+                    Experienced coach makes player Experienced. We keep that in our playing part.
+                </p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-or" style="--value:90;" role="progressbar"><span
+                        class="text-xl font-semibold text-black">90%</span></div>
+                <h3 class="text-xl font-semibold manrope">Senior Player</h3>
+                <p class="text-color4">
+                    We have so many senior player in our club. That makes junior player so ease to follow practically.
+                </p>
+            </div>
+            <div class="text-center space-y-5">
+                <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar"><span
+                        class="text-xl font-semibold text-black">80%</span></div>
+                <h3 class="text-xl font-semibold manrope">Training Ground</h3>
+                <p class="text-color4">
+                    Ground facility is the number one priority for make out good players.
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
